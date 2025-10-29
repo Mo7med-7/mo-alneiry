@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+
+.header {
+  background: rgba(15, 15, 35, 0.7);
+  backdrop-filter: blur(8px);
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 150px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.logo {
+  text-decoration: none;
+  color: #60a5fa;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2em;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  color: #93c5fd;
+}
+
+.NAVIGATIONS a {
+  text-decoration: none;
+  padding-left: 30px;
+  color: #e2e8f0;
+  font-weight: 500;
+  font-size: 1.6em;
+  transition: 0.3s ease;
+}
+
+.NAVIGATIONS a:hover {
+  color: #60a5fa;
+}
+
+/* =====================================
+   🔹 2. MAIN SECTION
+===================================== */
+section {
+  padding: 100px 200px;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #0a0a1a, #11142b, #1a1a40, #232357);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.main h2 {
+  color: #f8fafc;
+  font-weight: 500;
+  font-size: 2.7em;
+}
+
+.main h2 span {
+  color: #3b82f6;
+  font-weight: 700;
+  font-size: 1.7em;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.main h3 {
+  color: #a1a1aa;
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/* زرار */
+.main-btn {
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.9375em 2.1875em;
+  border-radius: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  transition: 0.8s ease;
+  box-shadow: 0 0 25px rgba(37, 99, 235, 0.4);
+}
+
+.main-btn:hover {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  transform: scale(1.07);
+  box-shadow: 0 0 35px rgba(96, 165, 250, 0.6);
+}
+
+/* السوشيال ميديا */
+.social-icons a {
+  color: #e2e8f0;
+  font-size: 2.5em;
+  padding-right: 22px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #60a5fa;
+}
+
+/* =====================================
+   🔹 3. ABOUT SECTION (مع المهارات جنب بعض)
+===================================== */
+.about {
+  background: linear-gradient(145deg, #0a0a1a, #11142b, #1a1a40);
+  color: #f8fafc;
+  padding: 100px 200px;
+  border-top: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  font-size: 1.7em;
+  line-height: 1.8;
+  color: #cbd5e1;
+  text-align: justify;
+  min-width: 280px;
+}
+
+.skills {
+  flex: 1;
+  background: rgba(30, 41, 59, 0.6);
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  min-width: 280px;
+}
+
+.skills h3 {
+  font-size: 2.4em;
+  color: #60a5fa;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill p {
+  font-size: 1.6em;
+  color: #e2e8f0;
+  margin-bottom: 8px;
+}
+
+.progress {
+  background: #1e293b;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 14px;
+}
+
+.bar {
+  height: 100%;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  border-radius: 8px;
+  animation: load 2s ease-out;
+}
+
+
+.contact .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  width: 25.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  color: #3a6cf4;
+  font-size: 8em;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h3 {
+  color: #3a6cf4;
+  font-size: 2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.info p {
+  color: #000;
+  font-size: 1.9em;
+  font-weight: 500;
+}
+
+
+.contact .icon {
+  font-size: 4.5em;
+}
+
+.contact .info h3 {
+  color: #000;
+}
+
+.contact .info p {
+  font-size: 1.4em;
+  color: #333;
+  word-break: break-word;
+  text-align: center;
+}
+
+
+.footer {
+  background-color: #000016;
+  color: #fff;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer .footer-title a {
+  color: #e2e8f0;
+  font-size: 2.2em;
+  padding-right: 22px;
+  transition: 0.3s;
+}
+
+.footer .footer-title a:hover {
+  transform: scale(1.1);
+}
+
+.footer p {
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+.footer .footer-title span {
+  color: #3a6cf4;
+}
+
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 2.8em;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: #3a6cf4;
+}
+
+.title:hover {
+  color: #0a49f6;
+}
+
+@keyframes load {
+  from {
+    width: 0;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  section {
+    padding: 80px 100px;
+  }
+
+  .header {
+    padding: 10px 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 15px 40px;
+  }
+
+  .NAVIGATIONS {
+    margin-top: 10px;
+  }
+
+  section {
+    padding: 80px 40px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills,
+  .about-text {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 9px;
+  }
+
+  .main h2 {
+    font-size: 2.2em;
+  }
+
+  .main h3 {
+    font-size: 1.8em;
+  }
+
+  .main-btn {
+    font-size: 1.2em;
+    padding: 0.8em 1.8em;
+  }
+
+  .skills h3 {
+    font-size: 2em;
+  }
+}
